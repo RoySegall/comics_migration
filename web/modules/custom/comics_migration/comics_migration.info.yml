@@ -1,0 +1,7 @@
+name: Comics migration
+type: module
+description: Migrate awesome nodes on Marvel and DC
+core: 8.x
+package: Custom
+dependencies:
+  - migrate_tools

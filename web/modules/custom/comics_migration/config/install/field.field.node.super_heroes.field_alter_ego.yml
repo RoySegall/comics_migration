@@ -1,0 +1,19 @@
+uuid: 8e5991e0-9d4d-458e-bdac-ff295ee2e135
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alter_ego
+    - node.type.super_heroes
+id: node.super_heroes.field_alter_ego
+field_name: field_alter_ego
+entity_type: node
+bundle: super_heroes
+label: 'Alter ego'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

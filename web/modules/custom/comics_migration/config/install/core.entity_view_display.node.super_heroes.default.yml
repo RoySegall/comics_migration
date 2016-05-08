@@ -1,0 +1,46 @@
+uuid: 930dbbd9-50f5-440d-a1df-cdd47c919e31
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.super_heroes.body
+    - field.field.node.super_heroes.field_alter_ego
+    - field.field.node.super_heroes.field_image
+    - image.style.medium
+    - node.type.super_heroes
+  module:
+    - image
+    - text
+    - user
+_core:
+  default_config_hash: p7lJFwHARVd4Gf4EubQ6Sti_JRegITjoISrELBeaVVw
+id: node.super_heroes.default
+targetEntityType: node
+bundle: super_heroes
+mode: default
+content:
+  body:
+    type: text_default
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_alter_ego:
+    type: basic_string
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    type: image
+    weight: 2
+    label: above
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+  links:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

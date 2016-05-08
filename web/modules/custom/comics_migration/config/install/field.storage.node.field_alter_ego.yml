@@ -1,0 +1,19 @@
+uuid: 68cc00f5-3f01-4d89-9c42-f09b19576d0a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_alter_ego
+field_name: field_alter_ego
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

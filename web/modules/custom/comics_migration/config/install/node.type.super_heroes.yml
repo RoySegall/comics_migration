@@ -1,0 +1,10 @@
+uuid: 27f17604-df90-431e-9484-244ebf29d027
+langcode: en
+status: true
+name: 'Super heroes'
+type: super_heroes
+description: 'Holds information on comics book super heroes.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,22 @@
+uuid: 843d42b6-8f5a-469f-b01f-040aae222280
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.super_heroes
+  module:
+    - text
+id: node.super_heroes.body
+field_name: body
+entity_type: node
+bundle: super_heroes
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
