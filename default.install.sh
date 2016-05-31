@@ -4,10 +4,10 @@
 MYSQL_USERNAME="root"
 MYSQL_PASSWORD="root"
 MYSQL_HOST="localhost"
-MYSQL_DB_NAME="comics"
+MYSQL_DB_NAME="comics_migration"
 
 # Get the base url for automatic login.
-BASE_DOMAIN_URL="http://localhost/comics/web"
+BASE_DOMAIN_URL="http://localhost/comics_migration/web"
 
 # Admin username details
 ADMIN_USERNAME="admin"
@@ -24,7 +24,7 @@ cd web
 $DRUSH si comics --db-url=mysql://${MYSQL_USERNAME}:${MYSQL_PASSWORD}@${MYSQL_HOST}/${MYSQL_DB_NAME} --account-name=${ADMIN_USERNAME} --account-pass=${ADMIN_PASSWORD} -y
 
 # CSV2SQL.
-$DRUSH csv2sql modules/custom/ifat_migrate/csv/news.csv
+$DRUSH csv2sql modules/custom/comics_migration/migration_assets/heroes.csv
 
 # Change settings.php file permissions.
 sudo chmod 777 sites/default/settings.php
@@ -33,7 +33,7 @@ sudo chmod 777 sites/default/settings.php
 echo "\$databases['migrate']['default'] = \$databases['default']['default'];" >> sites/default/settings.php
 
 # Change settings.php file permissions back.
-# sudo chmod 644 sites/default/settings.php
+sudo chmod 644 sites/default/settings.php
 
 $DRUSH mi --all
 

@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_image
     - node.type.super_heroes
   module:
+    - node
     - image
 id: node.super_heroes.field_image
 field_name: field_image
