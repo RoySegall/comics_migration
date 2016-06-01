@@ -1,0 +1,22 @@
+id: superheroes
+label: Migrate super heroes
+third_party_settings:
+  migrate_plus:
+    migration_group: comics_migration
+source:
+  plugin: Superheroes
+destination:
+  plugin: entity:node
+process:
+  type:
+    plugin: default_value
+    default_value: super_heroes
+  uid:
+    plugin: default_value
+    default_value: 1
+  title: _title
+  field_image:
+    source: _image
+    plugin: file_import
+  field_alter_ego: _alter_ego
+  'body/value': _description
