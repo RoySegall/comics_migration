@@ -1,4 +1,3 @@
-uuid: e175af79-f1dd-437a-a955-84b4ddb15d4f
 langcode: en
 status: true
 dependencies:
@@ -6,7 +5,6 @@ dependencies:
     - field.storage.node.field_image
     - node.type.super_heroes
   module:
-    - node
     - image
 id: node.super_heroes.field_image
 field_name: field_image

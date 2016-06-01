@@ -1,10 +1,17 @@
-uuid: 27f17604-df90-431e-9484-244ebf29d027
 langcode: en
 status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
 name: 'Super heroes'
 type: super_heroes
 description: 'Holds information on comics book super heroes.'
 help: ''
-new_revision: false
+new_revision: true
 preview_mode: 1
 display_submitted: true

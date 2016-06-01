@@ -1,4 +1,3 @@
-uuid: adcf27c5-0f43-46f8-8a61-f148f03c4fbb
 langcode: en
 status: true
 dependencies:
@@ -12,8 +11,6 @@ dependencies:
     - image
     - path
     - text
-_core:
-  default_config_hash: DaAsCcudSgqbef_SQxIEF5SXnoA2ynWspxG6BQ6am2A
 id: node.super_heroes.default
 targetEntityType: node
 bundle: super_heroes
@@ -21,7 +18,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 2
+    weight: 31
     settings:
       rows: 9
       summary_rows: 3
@@ -29,50 +26,50 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 5
+    weight: 10
     settings: {  }
     third_party_settings: {  }
   field_alter_ego:
-    type: string_textarea
-    weight: 3
+    weight: 32
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+    type: string_textarea
   field_image:
-    type: image_image
-    weight: 1
+    weight: 33
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
+    type: image_image
   path:
     type: path
-    weight: 8
+    weight: 30
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 15
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 16
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: -5
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 5
     settings:
       match_operator: CONTAINS
       size: 60
