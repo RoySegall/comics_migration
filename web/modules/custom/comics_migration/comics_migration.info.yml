@@ -3,11 +3,4 @@ description: 'Migrate awesome nodes on Marvel and DC.'
 type: module
 core: 8.x
 dependencies:
-  - field
-  - image
-  - menu_ui
-  - node
-  - path
-  - text
-  - user
   - migrate_tools
