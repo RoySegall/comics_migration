@@ -1,9 +1,8 @@
-uuid: 6362e7bc-edc1-4d30-a2a7-0c0e6e1b47c5
+uuid: 41a7a23c-fc7f-402f-b4cf-fbfe61726e2b
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
     - field.field.node.super_heroes.body
     - field.field.node.super_heroes.field_alter_ego
     - field.field.node.super_heroes.field_image
@@ -12,29 +11,26 @@ dependencies:
     - image
     - text
     - user
-_core:
-  default_config_hash: uAGewR2p6yjYi_-RSEZCIO3VoFdmBkqiTRavNFjSpIc
-id: node.super_heroes.teaser
+id: node.super_heroes.default
 targetEntityType: node
 bundle: super_heroes
-mode: teaser
+mode: default
 content:
   body:
-    label: hidden
-    type: text_summary_or_trimmed
+    type: text_default
     weight: 1
-    settings:
-      trim_length: 600
+    label: above
+    settings: {  }
     third_party_settings: {  }
   field_alter_ego:
     type: basic_string
-    weight: 2
+    weight: 3
     label: above
     settings: {  }
     third_party_settings: {  }
   field_image:
     type: image
-    weight: 3
+    weight: 2
     label: above
     settings:
       image_style: ''
